@@ -1,0 +1,30 @@
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Build files
+build/
+dist/
+
+# C/C++
+*.o
+*.out
+
+# CUDA
+*.cubin
+*.ptx
+
+# Temporary files
+*.tmp
+*.temp
