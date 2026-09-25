@@ -1,0 +1,5 @@
+environment,endpoint,requests_per_second,time_per_request_ms,failed_requests
+vm,health,2853.93,35.039,0
+vm,compute,20.09,497.878,0
+container,health,2230.52,44.833,0
+container,compute,18.68,535.2,0

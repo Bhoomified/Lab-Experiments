@@ -1,0 +1,9 @@
+environment,workload,bandwidth_MiBps,IOPS,latency_ms
+vm,random-read,1777.0,1776.0,0.56201
+vm,random-write,3740.0,3740.0,0.25885
+vm,seq-read,2831.0,2831.0,0.35252
+vm,seq-write,3061.0,3061.0,0.31767
+container,random-read,34.4,8813.0,0.11292
+container,random-write,32.0,8183.0,0.1216
+container,seq-read,4122.0,4122.0,0.24196
+container,seq-write,3324.0,3324.0,0.29255000000000003

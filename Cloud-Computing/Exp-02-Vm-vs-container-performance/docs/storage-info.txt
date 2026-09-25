@@ -1,0 +1,13 @@
+NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0    7:0    0     4K  1 loop /snap/bare/5
+loop1    7:1    0 236.1M  1 loop /snap/firefox/7764
+loop2    7:2    0  68.9M  1 loop /snap/core22/2293
+loop3    7:3    0   503M  1 loop /snap/gnome-42-2204/245
+loop4    7:4    0  91.7M  1 loop /snap/gtk-common-themes/1535
+loop5    7:5    0    10M  1 loop /snap/snap-store/1271
+loop6    7:6    0  41.6M  1 loop /snap/snapd/25939
+loop7    7:7    0   556K  1 loop /snap/snapd-desktop-integration/346
+sr0     11:0    1  1024M  1 rom  
+vda    253:0    0    54G  0 disk 
+├─vda1 253:1    0     1G  0 part /boot/efi
+└─vda2 253:2    0  52.9G  0 part /
