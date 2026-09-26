@@ -107,11 +107,9 @@ The experimental setup can be summarized as follows:
                     Comparison Graphs
 ```
 
-A detailed architecture diagram is available at:
+### Experimental Architecture
 
-```text
-docs/architecture.png
-```
+![Experimental Architecture](docs/architecture.png)
 
 ---
 
@@ -273,11 +271,9 @@ The processed results are stored at:
 results/processed/memory_results.csv
 ```
 
-The generated comparison graph is:
+### Memory Performance
 
-```text
-results/figures/memory_comparison.png
-```
+![Memory Performance Comparison](results/figures/memory_comparison.png)
 
 The raw benchmark outputs are stored under:
 
@@ -331,17 +327,13 @@ The measured results also show that the behavior differed substantially between 
 
 ## 8.3 Generated Graphs
 
-Disk bandwidth comparison:
+### Disk Bandwidth
 
-```text
-results/figures/disk_bandwidth_comparison.png
-```
+![Disk Bandwidth Comparison](results/figures/disk_bandwidth_comparison.png)
 
-Disk IOPS comparison:
+### Disk IOPS
 
-```text
-results/figures/disk_iops_comparison.png
-```
+![Disk IOPS Comparison](results/figures/disk_iops_comparison.png)
 
 Processed disk results:
 
@@ -428,11 +420,9 @@ The processed API results are stored at:
 results/processed/api_results.csv
 ```
 
-The generated graph is:
+### FastAPI Performance
 
-```text
-results/figures/api_requests_per_second.png
-```
+![FastAPI Requests Per Second](results/figures/api_requests_per_second.png)
 
 Raw API outputs are stored under:
 
