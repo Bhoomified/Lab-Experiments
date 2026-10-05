@@ -1,0 +1,6 @@
+workload,concurrency,response_time_ms,throughput_requests_per_second,successful_requests,failed_requests,cpu_percent,memory_mb,book_cpu_percent,member_cpu_percent,loan_cpu_percent,book_memory_mb,member_memory_mb,loan_memory_mb
+W1,1,12.4,32.45,200,0,1.91,35.27,5.31,0.2,0.21,35.76,34.56,35.49
+W2,2,11.95,48.16,200,0,0.67,35.29,1.56,0.21,0.24,35.81,34.56,35.49
+W3,4,8.37,54.05,200,0,0.2,35.35,0.2,0.2,0.21,35.99,34.56,35.49
+W4,8,9.71,48.12,200,0,0.25,35.41,0.27,0.24,0.23,36.19,34.56,35.49
+W5,16,15.31,47.97,200,0,0.26,35.51,0.27,0.26,0.24,36.47,34.56,35.49

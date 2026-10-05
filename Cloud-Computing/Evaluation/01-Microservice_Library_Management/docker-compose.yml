@@ -1,0 +1,52 @@
+name: library-management
+
+services:
+
+  book_service:
+    build: ./book_service
+    image: library-book-service:latest
+    container_name: book_service
+    ports:
+      - "8001:8001"
+    networks:
+      - library_net
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8001/health')"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  member_service:
+    build: ./member_service
+    image: library-member-service:latest
+    container_name: member_service
+    ports:
+      - "8002:8002"
+    networks:
+      - library_net
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8002/health')"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  loan_service:
+    build: ./loan_service
+    image: library-loan-service:latest
+    container_name: loan_service
+    ports:
+      - "8003:8003"
+    environment:
+      BOOK_SERVICE_URL: http://book_service:8001
+      MEMBER_SERVICE_URL: http://member_service:8002
+    networks:
+      - library_net
+    depends_on:
+      book_service:
+        condition: service_healthy
+      member_service:
+        condition: service_healthy
+
+networks:
+  library_net:
+    driver: bridge
