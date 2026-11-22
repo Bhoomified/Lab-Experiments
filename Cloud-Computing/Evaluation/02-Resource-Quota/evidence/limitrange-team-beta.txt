@@ -1,0 +1,6 @@
+Name:       container-limits
+Namespace:  team-beta
+Type        Resource  Min   Max    Default Request  Default Limit  Max Limit/Request Ratio
+----        --------  ---   ---    ---------------  -------------  -----------------------
+Container   cpu       50m   500m   100m             500m           -
+Container   memory    64Mi  512Mi  128Mi            256Mi          -

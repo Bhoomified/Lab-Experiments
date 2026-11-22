@@ -1,0 +1,1 @@
+Error from server (Forbidden): error when creating "manifests/07-pod-exceeds-quota.yaml": pods "too-big-for-quota" is forbidden: exceeded quota: compute-quota, requested: limits.cpu=1,pods=1,requests.cpu=900m, used: limits.cpu=1700m,pods=4,requests.cpu=700m, limited: limits.cpu=2,pods=4,requests.cpu=1

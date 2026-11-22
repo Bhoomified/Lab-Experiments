@@ -1,0 +1,10 @@
+# Two namespaces, one per application, so each gets its own quota.
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: team-alpha
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: team-beta

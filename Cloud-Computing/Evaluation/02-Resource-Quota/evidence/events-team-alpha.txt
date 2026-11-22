@@ -1,0 +1,35 @@
+LAST SEEN   TYPE      REASON              OBJECT                            MESSAGE
+2m52s       Normal    Scheduled           pod/no-resources-pod              Successfully assigned team-alpha/no-resources-pod to minikube
+2m52s       Normal    Pulling             pod/no-resources-pod              Pulling image "nginx:1.25-alpine"
+2m45s       Normal    SuccessfulCreate    replicaset/web-alpha-8449999997   Created pod: web-alpha-8449999997-7ngwq
+2m45s       Normal    Scheduled           pod/web-alpha-8449999997-7ngwq    Successfully assigned team-alpha/web-alpha-8449999997-7ngwq to minikube
+2m45s       Normal    Pulling             pod/web-alpha-8449999997-7ngwq    Pulling image "nginx:1.25-alpine"
+2m45s       Normal    ScalingReplicaSet   deployment/web-alpha              Scaled up replica set web-alpha-8449999997 from 0 to 2
+2m45s       Normal    Pulling             pod/web-alpha-8449999997-pl856    Pulling image "nginx:1.25-alpine"
+2m45s       Normal    SuccessfulCreate    replicaset/web-alpha-8449999997   Created pod: web-alpha-8449999997-pl856
+2m45s       Normal    Scheduled           pod/web-alpha-8449999997-pl856    Successfully assigned team-alpha/web-alpha-8449999997-pl856 to minikube
+2m39s       Normal    Created             pod/no-resources-pod              Container created
+2m39s       Normal    Started             pod/no-resources-pod              Container started
+2m39s       Normal    Pulled              pod/no-resources-pod              Successfully pulled image "nginx:1.25-alpine" in 12.351s (12.351s including waiting). Image size: 20193659 bytes.
+2m37s       Normal    Started             pod/web-alpha-8449999997-pl856    Container started
+2m37s       Normal    Created             pod/web-alpha-8449999997-pl856    Container created
+2m37s       Normal    Pulled              pod/web-alpha-8449999997-pl856    Successfully pulled image "nginx:1.25-alpine" in 1.863s (7.168s including waiting). Image size: 20193659 bytes.
+2m35s       Normal    Created             pod/web-alpha-8449999997-7ngwq    Container created
+2m35s       Normal    Started             pod/web-alpha-8449999997-7ngwq    Container started
+2m35s       Normal    Pulled              pod/web-alpha-8449999997-7ngwq    Successfully pulled image "nginx:1.25-alpine" in 2.176s (9.338s including waiting). Image size: 20193659 bytes.
+52s         Warning   FailedCreate        replicaset/web-alpha-8449999997   Error creating: pods "web-alpha-8449999997-6xhsp" is forbidden: exceeded quota: compute-quota, requested: limits.cpu=400m,pods=1, used: limits.cpu=1700m,pods=4, limited: limits.cpu=2,pods=4
+52s         Warning   FailedCreate        replicaset/web-alpha-8449999997   Error creating: pods "web-alpha-8449999997-5rrbl" is forbidden: exceeded quota: compute-quota, requested: limits.cpu=400m,pods=1, used: limits.cpu=1700m,pods=4, limited: limits.cpu=2,pods=4
+52s         Normal    Pulled              pod/web-alpha-8449999997-8snmt    Container image "nginx:1.25-alpine" already present on machine and can be accessed by the pod
+52s         Normal    SuccessfulCreate    replicaset/web-alpha-8449999997   Created pod: web-alpha-8449999997-8snmt
+52s         Warning   FailedCreate        replicaset/web-alpha-8449999997   Error creating: pods "web-alpha-8449999997-fdrn8" is forbidden: exceeded quota: compute-quota, requested: limits.cpu=400m,pods=1, used: limits.cpu=1700m,pods=4, limited: limits.cpu=2,pods=4
+52s         Warning   FailedCreate        replicaset/web-alpha-8449999997   Error creating: pods "web-alpha-8449999997-42bvr" is forbidden: exceeded quota: compute-quota, requested: limits.cpu=400m,pods=1, used: limits.cpu=1700m,pods=4, limited: limits.cpu=2,pods=4
+52s         Normal    Started             pod/web-alpha-8449999997-8snmt    Container started
+52s         Normal    Scheduled           pod/web-alpha-8449999997-8snmt    Successfully assigned team-alpha/web-alpha-8449999997-8snmt to minikube
+52s         Warning   FailedCreate        replicaset/web-alpha-8449999997   Error creating: pods "web-alpha-8449999997-5jb7v" is forbidden: exceeded quota: compute-quota, requested: limits.cpu=400m,pods=1, used: limits.cpu=1700m,pods=4, limited: limits.cpu=2,pods=4
+52s         Warning   FailedCreate        replicaset/web-alpha-8449999997   Error creating: pods "web-alpha-8449999997-hg47z" is forbidden: exceeded quota: compute-quota, requested: limits.cpu=400m,pods=1, used: limits.cpu=1700m,pods=4, limited: limits.cpu=2,pods=4
+52s         Warning   FailedCreate        replicaset/web-alpha-8449999997   Error creating: pods "web-alpha-8449999997-hh4jj" is forbidden: exceeded quota: compute-quota, requested: limits.cpu=400m,pods=1, used: limits.cpu=1700m,pods=4, limited: limits.cpu=2,pods=4
+52s         Warning   FailedCreate        replicaset/web-alpha-8449999997   Error creating: pods "web-alpha-8449999997-4lth4" is forbidden: exceeded quota: compute-quota, requested: limits.cpu=400m,pods=1, used: limits.cpu=1700m,pods=4, limited: limits.cpu=2,pods=4
+52s         Warning   FailedCreate        replicaset/web-alpha-8449999997   Error creating: pods "web-alpha-8449999997-m6x6v" is forbidden: exceeded quota: compute-quota, requested: limits.cpu=400m,pods=1, used: limits.cpu=1700m,pods=4, limited: limits.cpu=2,pods=4
+52s         Normal    ScalingReplicaSet   deployment/web-alpha              Scaled up replica set web-alpha-8449999997 from 2 to 5
+52s         Normal    Created             pod/web-alpha-8449999997-8snmt    Container created
+16s         Warning   FailedCreate        replicaset/web-alpha-8449999997   (combined from similar events): Error creating: pods "web-alpha-8449999997-r9dhj" is forbidden: exceeded quota: compute-quota, requested: limits.cpu=400m,pods=1, used: limits.cpu=1700m,pods=4, limited: limits.cpu=2,pods=4

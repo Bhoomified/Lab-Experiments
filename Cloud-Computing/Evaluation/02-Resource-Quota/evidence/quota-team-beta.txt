@@ -1,0 +1,9 @@
+Name:            compute-quota
+Namespace:       team-beta
+Resource         Used   Hard
+--------         ----   ----
+limits.cpu       800m   1
+limits.memory    512Mi  1Gi
+pods             2      2
+requests.cpu     400m   500m
+requests.memory  256Mi  512Mi

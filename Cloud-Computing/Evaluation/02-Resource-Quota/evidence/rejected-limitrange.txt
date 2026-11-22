@@ -1,0 +1,1 @@
+Error from server (Forbidden): error when creating "manifests/06-pod-exceeds-limitrange.yaml": pods "too-big-for-limitrange" is forbidden: maximum cpu usage per Container is 1, but limit is 2

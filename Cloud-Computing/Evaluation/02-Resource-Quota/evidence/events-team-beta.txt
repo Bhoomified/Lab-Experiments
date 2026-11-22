@@ -1,0 +1,12 @@
+LAST SEEN   TYPE     REASON              OBJECT                           MESSAGE
+25s         Normal   Scheduled           pod/web-beta-6dccd644b5-77zng    Successfully assigned team-beta/web-beta-6dccd644b5-77zng to minikube
+25s         Normal   Scheduled           pod/web-beta-6dccd644b5-b54s7    Successfully assigned team-beta/web-beta-6dccd644b5-b54s7 to minikube
+25s         Normal   SuccessfulCreate    replicaset/web-beta-6dccd644b5   Created pod: web-beta-6dccd644b5-b54s7
+25s         Normal   SuccessfulCreate    replicaset/web-beta-6dccd644b5   Created pod: web-beta-6dccd644b5-77zng
+25s         Normal   ScalingReplicaSet   deployment/web-beta              Scaled up replica set web-beta-6dccd644b5 from 0 to 2
+24s         Normal   Pulled              pod/web-beta-6dccd644b5-77zng    Container image "nginx:1.25-alpine" already present on machine and can be accessed by the pod
+24s         Normal   Created             pod/web-beta-6dccd644b5-77zng    Container created
+24s         Normal   Started             pod/web-beta-6dccd644b5-77zng    Container started
+24s         Normal   Pulled              pod/web-beta-6dccd644b5-b54s7    Container image "nginx:1.25-alpine" already present on machine and can be accessed by the pod
+24s         Normal   Created             pod/web-beta-6dccd644b5-b54s7    Container created
+24s         Normal   Started             pod/web-beta-6dccd644b5-b54s7    Container started

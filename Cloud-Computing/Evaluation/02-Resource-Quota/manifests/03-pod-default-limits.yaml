@@ -1,0 +1,11 @@
+# TEST 1 - no resources written on purpose.
+# Expected: ACCEPTED. LimitRange fills in the default request and limit.
+apiVersion: v1
+kind: Pod
+metadata:
+  name: no-resources-pod
+  namespace: team-alpha
+spec:
+  containers:
+    - name: app
+      image: nginx:1.25-alpine

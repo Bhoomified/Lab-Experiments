@@ -1,0 +1,18 @@
+# TEST 3 - CPU limit (2) is above the LimitRange max (1) in team-alpha.
+# Expected: REJECTED by the LimitRange.
+apiVersion: v1
+kind: Pod
+metadata:
+  name: too-big-for-limitrange
+  namespace: team-alpha
+spec:
+  containers:
+    - name: app
+      image: nginx:1.25-alpine
+      resources:
+        requests:
+          cpu: 500m
+          memory: 128Mi
+        limits:
+          cpu: "2"
+          memory: 256Mi

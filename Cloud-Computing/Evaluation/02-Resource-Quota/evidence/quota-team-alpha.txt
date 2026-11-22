@@ -1,0 +1,9 @@
+Name:            compute-quota
+Namespace:       team-alpha
+Resource         Used   Hard
+--------         ----   ----
+limits.cpu       1700m  2
+limits.memory    1Gi    2Gi
+pods             4      4
+requests.cpu     700m   1
+requests.memory  512Mi  1Gi

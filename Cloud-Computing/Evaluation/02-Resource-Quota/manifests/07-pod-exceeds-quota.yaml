@@ -1,0 +1,19 @@
+# TEST 4 - valid for the LimitRange, but the namespace has already used
+# part of its CPU quota, so 900m more does not fit.
+# Expected: REJECTED by the ResourceQuota.
+apiVersion: v1
+kind: Pod
+metadata:
+  name: too-big-for-quota
+  namespace: team-alpha
+spec:
+  containers:
+    - name: app
+      image: nginx:1.25-alpine
+      resources:
+        requests:
+          cpu: 900m
+          memory: 64Mi
+        limits:
+          cpu: "1"
+          memory: 128Mi

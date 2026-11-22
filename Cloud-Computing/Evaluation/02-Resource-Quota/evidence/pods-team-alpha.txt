@@ -1,0 +1,5 @@
+NAME                         READY   STATUS    RESTARTS   AGE     IP           NODE       NOMINATED NODE   READINESS GATES
+no-resources-pod             1/1     Running   0          2m52s   10.244.0.3   minikube   <none>           <none>
+web-alpha-8449999997-7ngwq   1/1     Running   0          2m45s   10.244.0.5   minikube   <none>           <none>
+web-alpha-8449999997-8snmt   1/1     Running   0          52s     10.244.0.6   minikube   <none>           <none>
+web-alpha-8449999997-pl856   1/1     Running   0          2m45s   10.244.0.4   minikube   <none>           <none>
